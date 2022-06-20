@@ -1,0 +1,47 @@
+<html>
+    <head><title> MSK NUTES &BOLTS</title>
+    <style>
+        body
+        {
+          background-image:url("download.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          display:-moz-grid;
+          justify-content: center;
+          align-self: center;
+
+        }
+        h1{
+            text-align-last: center;
+        }
+        h2{
+            text-align:right;
+        }
+    </style>
+    </head>
+    <body>
+    <div>
+       <h1><b>MSK NUTS& BOLTS</b></h1>
+       <h2>Contact:9942505753,9940969305</h2>
+       <label><b>Company Name:</b></label><input type="text"/><br><br>
+       <label><b>Address:</b></label><input type="address"/>
+       <h3>Select your location:</h3><button onclick="getlocation()">Click me</button><div id="location"></div><br>
+    <script>
+	    var x= document.getElementById("location");
+        function getlocation()
+        {
+    	    if(navigator.geolocation){
+    		alert("your browser is supporting Geolocation API");
+    	    }
+    	    else
+    	    {
+    		alert("Sorry! your browser is not supporting");
+    	    }
+        }
+        
+    </script>
+    <label><b>Type of NUTS in size:</b></label><input type="text"/>
+    </div>
+    </body>
+</html>
